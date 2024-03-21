@@ -1,0 +1,112 @@
+html, body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    margin: 0;
+    min-height: 180;
+    width: 296px;
+    color: #FFFFFF;
+    background-color: #344955;
+    box-shadow: 0px 3px 2px 1px #50727B;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid transparent;
+    transition: border-color 1s ease-in-out;
+    z-index: -1;
+}
+
+button:hover::before {
+    border-color: #50727B;}
+
+button:hover {
+    background-color: #50727B;
+    color: #fff;
+    box-shadow: 0px 0px 10px 5px #50727B;
+    transition: background-color 1s ease-in-out, color 1s ease-in-out;
+}
+h1 {
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0;
+}
+
+p {
+    font-size: 14px;
+}
+
+button {
+    background-color: rgba(216, 229, 229, 0.644);
+    border: 2px solid rgb(232, 220, 220);
+    font-size: 16px;
+    font-weight: bolder;
+    padding: 12px 12px;
+    margin: 8px 0px 8px 0px;
+    border-radius: 3px;
+    box-shadow: 0px 3px 2px 1px #00131f;
+    width: 100%;
+    transition: background-color 0.2s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+button:active {
+    background-color: #344955;
+    color: #fff;
+    box-shadow: 0px 0px 10px 5px #344955;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;}
+
+a:link, a:visited, a:hover, a:active {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.modal-header {
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 3px 2px 1px #00131f;
+    background-color: #344955;
+    padding: 3px;
+}
+
+.modal-content {
+    padding: 0px 16px 0px 16px;
+}
+
+.modal-footer {
+    text-align: center;
+    font-size: 12px;
+    padding: 3px 3px 8px 3px;
+}
+
+.container {
+    background-color: #000000;
+    margin: 8px 0px 8px 0px;
+    padding: 6px 14px 6px 14px;
+    border-radius: 3px;
+    box-shadow: 0px 3px 2px 1px #00131f;
+}
+
+.container p {
+    margin: 0px;
+}
+
+.label {
+    color: #B8B8B8;
+    margin: 0px;
+    font-weight: 150;
+}
+
+.number, .total-number {
+    color: #FFFFFF;
+    font-size: 32px;
+}
+
+.modal-footer a {
+    color: #D8D8D8;
+}
